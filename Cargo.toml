@@ -1,0 +1,27 @@
+[package]
+name = "mumtify"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+librespot-core = "0.4"
+librespot-playback = "0.4"
+librespot-discovery = "0.4"
+librespot-protocol = "0.4"
+librespot-metadata = "0.4"
+librespot-connect = "0.4" # Added for Spirc
+
+mumble-protocol = "0.4"
+opus = "0.3"
+rubato = "0.14"
+ringbuf = "0.3"
+log = "0.4"
+env_logger = "0.10"
+anyhow = "1.0"
+byteorder = "1.4"
+protobuf = "3.2"
+futures-util = "0.3"
+tokio-native-tls = "0.3"
+tokio-util = { version = "0.6", features = ["codec"] } # Explicitly add tokio-util for codec traits
+sha1 = "0.10" # Often needed for device ID generation
