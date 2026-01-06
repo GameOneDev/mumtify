@@ -10,7 +10,7 @@ librespot-playback = "0.4"
 librespot-discovery = "0.4"
 librespot-protocol = "0.4"
 librespot-metadata = "0.4"
-librespot-connect = "0.4" # Added for Spirc
+librespot-connect = "0.4"
 
 mumble-protocol = "0.4"
 opus = "0.3"
@@ -23,5 +23,5 @@ byteorder = "1.4"
 protobuf = "3.2"
 futures-util = "0.3"
 tokio-native-tls = "0.3"
-tokio-util = { version = "0.6", features = ["codec"] } # Explicitly add tokio-util for codec traits
+tokio-util = { version = "0.6", features = ["codec", "net"] }
 sha1 = "0.10" # Often needed for device ID generation
